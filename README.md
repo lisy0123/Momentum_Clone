@@ -1,6 +1,6 @@
-# Painter
+# Momentum Clone
 
-Painting Board made with VaillaJS
+Momentum Clone made with VaillaJS
 
 [↩️ Go Back](https://github.com/lisy0123/Nomadcoders)
 
