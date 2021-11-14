@@ -11,3 +11,4 @@ const bgImage = document.createElement("img");
 
 bgImage.src = `img/${choseImage}`;
 document.body.appendChild(bgImage);
+bgImage.classList.add("imgs");
