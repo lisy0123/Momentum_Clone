@@ -11,14 +11,14 @@ function handleGreeting() {
     const today = new Date();
     let time = today.getHours();
 
-    if (time >= 19) {
-        greet.innerHTML = `Good Evening!`;
+    if (time >= 18) {
+        greet.innerHTML = `Good Evening 🌙`;
     } else if (time >= 12) {
-        greet.innerHTML = `Good Afternoon!`;
-    } else if (time > 0 && time < 6) {
-        greet.innerHTML = `Good Morning!`;
+        greet.innerHTML = `Good Afternoon 🌤`;
+    } else if (time >= 0 && time < 6) {
+        greet.innerHTML = `Go to sleep 🛌`;
     } else {
-        greet.innerHTML = `Good Morning!`;
+        greet.innerHTML = `Good Morning ☀️`;
     }
 }
 

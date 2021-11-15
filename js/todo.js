@@ -11,27 +11,25 @@ function saveToDos() {
 }
 
 function deleteToDo(event) {
-    const li = event.target.parentElement.parentElement;
+    const li = event.target.parentElement.parentNode;
     li.remove();
     toDos = toDos.filter(toDo => toDo.id !== parseInt(li.id));
     saveToDos();
 }
 
 function paintToDo(newTodo) {
-    const li = document.createElement("li");
-    li.id = newTodo.id;
-    const span = document.createElement("span");
-    const spanDelete = document.createElement("span");
-
-    span.classList.add("item");
-    spanDelete.classList.add("delete");
-    span.innerText = newTodo.text;
-    spanDelete.innerHTML = `<i class="far fa-trash-alt"></i>`;
-
-    li.appendChild(span);
-    li.appendChild(spanDelete);
-    toDoList.appendChild(li);
-    spanDelete.addEventListener("click", deleteToDo);
+    const ul = document.createElement("ul");
+    ul.id = newTodo.id;
+    const liItem = document.createElement("li");
+    liItem.classList.add("item");
+    const liDelete = document.createElement("li");
+    liDelete.classList.add("delete");
+    liItem.innerText = newTodo.text;
+    liDelete.innerHTML = `<i id="edit" class="far fa-trash-alt"></i>`;
+    ul.appendChild(liItem);
+    ul.appendChild(liDelete);
+    toDoList.appendChild(ul);
+    liDelete.addEventListener("click", deleteToDo);
 }
 
 function handleToDoSummit(event) {

@@ -29,13 +29,18 @@ const days = [
 
 function getClock() {
     const today = new Date();
-    const hours = String(today.getHours()).padStart(2, "0");
+    const hours = String((today.getHours())%12).padStart(2, "0");
     const minutes = String(today.getMinutes()).padStart(2, "0");
     const seconds = String(today.getSeconds()).padStart(2, "0");
-    clock.innerText = `${hours}:${minutes}:${seconds}`;
+    clock.innerText = `${hours}:${minutes}:${seconds} ${today.getHours() >= 12 ? "PM" : "AM"
+    }`;
 }
 
-date.innerHTML = `${days[today.getDay()]} ${mothNames[today.getMonth()]} ${today.getDate()}, ${today.getFullYear()}`;
+function getDate() {
+    date.innerHTML = `${days[today.getDay()]} ${mothNames[today.getMonth()]} ${today.getDate()}, ${today.getFullYear()}`;
+}
 
+getDate();
 getClock();
+setInterval(getDate, 1000 * 60 * 10);
 setInterval(getClock, 1000);
