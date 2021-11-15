@@ -12,13 +12,25 @@
     </div>
     <div class="container">
         <div class="main">
-            <p id="clock">00:00:00</p>
-            <div class="name">
-               <h1 class="hello">Good Morning!</h1>
-                <h2 id="greeting" class="hidden"></h2>
+            <div class="div-clock-date">
+                <p id="clock">00:00:00</p>
+                <p class="date"></p>
+            </div>
+            <div class="hello">
+                <h1 id="hello-greeting">Good Morning!</h1>
                 <form class="hidden" id="login-form">
                     <input required type="text" placeholder="What is your name? "/>
                 </form>
+                <div id="div-greeting">
+                    <h2 id="greeting" class="hidden"></h2>
+                    <div id="modify" class="hidden">
+                        <i class="fa fa-pen"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="quote">
+                <p class="quote"></p>
+                <p class="author"></p>
             </div>
         </div>
         <div class="todolist">
@@ -27,14 +39,10 @@
             </form>
             <ul id="todo-list">
             </ul>
-            <div id="quote">
-                <span></span>
-                <span></span>
-            </div>
         </div>
         <script src="https://kit.fontawesome.com/6e488df9c7.js" crossorigin="anonymous"></script>
         <script src="js/greeting.js"></script>
-        <script src="js/clock.js"></script>
+        <script src="js/clock_date.js"></script>
         <script src="js/quotes.js"></script>
         <script src="js/background.js"></script>
         <script src="js/todo.js"></script>

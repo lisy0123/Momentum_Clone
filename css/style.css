@@ -1,5 +1,31 @@
 @import 'reset.css';
 
+:root {
+    --light-main-color: #C1B3F2;
+    --main1-color: #7E5EF2;
+    --main2-color: #6A44F2;
+    --drak-main-color: #7559D9;
+    --lightgray-color: #F2F2F2;
+    --gray-color: #A2A2A2;
+    --dark-background-color: #160c2e;
+    --black-color: #000000;
+
+    --space-xxl: 24vh;
+    --space-xl: 12vh;
+    --space-l: 8vh;
+    --space-m: 4vh;
+    --space-s: 2vh;
+    --space-xs: 1vh;
+
+    --fontsize-h1: 35px;
+    --fontsize-h2: 28px;
+    --fontsize-h3: 24px;
+    --fontsize-l: 20px;
+    --fontsize-m: 18px;
+    --fontsize-s: 16px;
+    --fontsize-xs: 14px;
+}
+
 body {
     width: 100%;
     min-width: 100vh;
@@ -16,80 +42,136 @@ body {
     display: flex;
     max-width: 1160px;
     height: 800px;
+    margin: var(--space-s);
 }
 
 .main {
-    max-width: 500px;
+    width: 45vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 5vh;
+    margin: var(--space-s);
 }
 
-.name {
-    margin: 2vh;
+.hello {
+    text-transform: uppercase;
+    margin-left: var(--space-xs);
+    margin-bottom: var(--space-xs);
 }
 
-.name input {
-    font-size: 30px;
+#hello-greeting {
+    font-size: var(--fontsize-h1);
+    color: var(--dark-background-color);
+}
+
+#greeting {
+    font-size: var(--fontsize-h2);
+    color: var(--main1-color);
     font-weight: 600;
-    height: 36px;
-    border: none;
-    outline: none;
-    border-bottom: solid 3px gray;
-    padding-left: 5px;
-    color: black;
+    margin-right: var(--space-xs);
 }
 
-.name input::placeholder {
-    color: gray;
-    font-size: 25px;
-    font-weight: 300;
-}
-
-#clock {
-    font-size: 30px;
-    margin: 1vh;
-}
-
-h1 {
-    font-size: 35px;
-    text-transform: uppercase;
-}
-
-h2 {
-    font-size: 30px;
-    text-transform: uppercase;
-}
-
-.todo-list ul {
+#div-greeting {
     display: flex;
     align-items: center;
 }
 
-.item {
+#modify {
+    font-size: var(--fontsize-s);
+    color: var(--gray-color);
+}
+
+#modify:hover {
+    color: var(--drak-main-color);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hello input {
+    font-size: var(--fontsize-h2);
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-bottom: solid 3px var(--main1-color);
+    padding-left: var(--space-xs);
+    color: var(--main1-color);
+}
+
+.hello input::placeholder {
+    color: var(--gray-color);
+    font-size: var(--fontsize-m);
     font-weight: 300;
+}
+
+.div-clock-date {
+    display: flex;
+    color:var(--dark-background-color);
+    margin-left: var(--space-xs);
+}
+
+.date {
+    margin-left: var(--space-xs);
+}
+
+#quote {
+    height: 10vh;
+    font-weight: 200;
+    margin: var(--space-xs);
+    color: var(--dark-background-color);
+    align-items: center;
+}
+
+.quote {
+    font-size: var(--fontsize-xs);
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: var(--space-xs);
+}
+
+.author {
+    float: right;
+    font-size: var(--fontsize-xs);
 }
 
 .todolist {
-    display: flex;
-    align-items: flex-end;
+    width: 45vh;
+    margin: var(--fontsize-s); 
 }
 
-.imgs {
-    display: flex;
+.todolist input {
+    font-size: var(--fontsize-m);
+    font-weight: 300;
+    border: none;
+    outline: none;
+    border-bottom: solid 3px var(--main1-color);
+    padding-left: var(--fontsize-xs);
+    color: var(--main1-color);
+}
+
+.todolist input::placeholder {
+    color: var(--gray-color);
+    font-size: var(--fontsize-s);
+    font-weight: 300;
+}
+
+#todo-list {
     align-items: center;
-    width: 300px;
-    height: 300px;
+    font-size: var(--space-s);
+}
+
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    margin: var(--space-xs);
+    font-weight: 300;
+    color: var(--dark-background-color);
 }
 
 .delete {
-    color: gray;
-    transition: all 0.2s ease-in-out;
+    color: var(--gray-color);
 }
 
 .delete:hover {
-    color: red;
+    color: var(--drak-main-color);
     cursor: pointer;
-    transform: scale(0.5);
+    transform: scale(1.1);
 }
