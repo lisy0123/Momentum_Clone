@@ -26,10 +26,12 @@ function paintToDo(newTodo) {
     liDelete.classList.add("delete");
     liItem.innerText = newTodo.text;
     liDelete.innerHTML = `<i id="edit" class="far fa-trash-alt"></i>`;
+    const iDelete = liDelete.querySelector("#edit")
+
     ul.appendChild(liItem);
     ul.appendChild(liDelete);
     toDoList.appendChild(ul);
-    liDelete.addEventListener("click", deleteToDo);
+    iDelete.addEventListener("click", deleteToDo);
 }
 
 function handleToDoSummit(event) {

@@ -1,0 +1,21 @@
+.div-search {
+
+}
+
+#search-form input {
+    font-size: var(--fontsize-l);
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-bottom: solid 3px var(--main1-color);
+    padding-left: var(--space-xs);
+    color: var(--main1-color);
+    filter: hue-rotate(200%);
+    filter: brightness(150%);
+}
+
+#search-form input::placeholder {
+    color: var(--gray-color);
+    font-size: var(--fontsize-s);
+    font-weight: 300;
+}

@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/img.css">
+    <link rel="stylesheet" href="css/todolist.css">
     <title>Momentum Clon</title>
 </head>
 <body>
-    <div class="music">
+    <div class="div-music">
     </div>
     <div class="container">
         <div class="main">
@@ -16,10 +20,10 @@
                 <p class="date"></p>
                 <p id="clock">00:00:00</p>
             </div>
-            <div class="hello">
+            <div class="div-hello">
                 <h1 id="hello-greeting">Good Morning!</h1>
                 <form class="hidden" id="login-form">
-                    <input required type="text" placeholder="What is your name? "/>
+                    <input required type="text" placeholder="What is your name?"/>
                 </form>
                 <div id="div-greeting">
                     <h2 id="greeting" class="hidden"></h2>
@@ -28,13 +32,44 @@
                     </div>
                 </div>
             </div>
-            <div id="quote">
-                <p class="quote"></p>
-                <p class="author"></p>
+            <div class="div-weather">
+                <p>Wather</p>
+            </div>
+            <div class="div-search">
+                <form id="search-form">
+                    <i class="fas fa-search"></i>
+                    <input required type="text" placeholder="Search"/>
+                </form>
+                <div class="search-engine">
+                    <span class="search-engine-img">G</span>
+                    <input type="checkbox" id="search-engine-check">
+                    <i class="fas fa-chevron-down focusting"></i>
+                    <div class="search-engine-box">
+                        <p class="box-nipple"></p>
+                        <ul class="search-engine-list">
+                            <li>Google</li>
+                            <li>Naver</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="div-bookmark">
+                <div class="bookmark">
+
+                </div>
+            </div>
+            <div class="div-images">
+                <p class="images-title">TODAY QUOTE.</p>
+                <div id=images>
+                    <div id="quote">
+                        <p class="quote"></p>
+                        <p class="author"></p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="todolist">
-            <p class="todolist-title">TO DO</p>
+        <div class="div-todo">
+            <p class="todo-title">TO DO.</p>
             <div id="todo-list">
             </div>
             <form id="todo-form">
@@ -44,8 +79,7 @@
         <script src="https://kit.fontawesome.com/6e488df9c7.js" crossorigin="anonymous"></script>
         <script src="js/greeting.js"></script>
         <script src="js/clock_date.js"></script>
-        <script src="js/quotes.js"></script>
-        <script src="js/background.js"></script>
+        <script src="js/quote.js"></script>
         <script src="js/todo.js"></script>
     </div>
 </body>

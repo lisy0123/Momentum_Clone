@@ -1,0 +1,52 @@
+@import 'reset.css';
+
+:root {
+    --light-main-color: #ddd5f7;
+    --main1-color: #7E5EF2;
+    --main2-color: #6A44F2;
+    --drak-main-color: #392d68;
+    --lightgray-color: #f2f2f2;
+    --gray-color: #A2A2A2;
+    --dark-background-color: #160c2e;
+    --black-color: #000000;
+
+    --space-xxl: 72px;
+    --space-xl: 48px;
+    --space-l: 24px;
+    --space-m: 16px;
+    --space-s: 12px;
+    --space-xs: 8px;
+    --space-xxs: 4px;
+
+    --fontsize-h1: 35px;
+    --fontsize-h2: 28px;
+    --fontsize-h3: 24px;
+    --fontsize-l: 20px;
+    --fontsize-m: 18px;
+    --fontsize-s: 16px;
+    --fontsize-xs: 14px;
+}
+
+.body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: var(--space-s);
+}
+
+@media screen and (max-width:850px) {
+    .container {
+        flex-direction: column;
+    }
+}
