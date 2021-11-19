@@ -9,16 +9,19 @@
     <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/img.css">
     <link rel="stylesheet" href="css/todolist.css">
-    <title>Momentum Clon</title>
+    <title>Momentum Clone</title>
 </head>
 <body>
     <div class="div-music">
     </div>
     <div class="container">
         <div class="main">
-            <div class="div-clock-date">
+            <div class="div-date">
                 <p class="date"></p>
+            </div>
+            <div class="div-sub">
                 <p id="clock">00:00:00</p>
+                <p class="weather"></p>
             </div>
             <div class="div-hello">
                 <h1 id="hello-greeting">Good Morning!</h1>
@@ -31,9 +34,6 @@
                         <i class="fa fa-pen"></i>
                     </div>
                 </div>
-            </div>
-            <div class="div-weather">
-                <p>Wather</p>
             </div>
             <div class="div-search">
                 <form id="search-form">
@@ -65,6 +65,7 @@
                         <p class="quote"></p>
                         <p class="author"></p>
                     </div>
+                    <div class="img-cover"></div>
                 </div>
             </div>
         </div>
@@ -77,8 +78,9 @@
             </form>
         </div>
         <script src="https://kit.fontawesome.com/6e488df9c7.js" crossorigin="anonymous"></script>
-        <script src="js/greeting.js"></script>
         <script src="js/clock_date.js"></script>
+        <script src="js/weather.js"></script>
+        <script src="js/greeting.js"></script>
         <script src="js/quote.js"></script>
         <script src="js/todo.js"></script>
     </div>

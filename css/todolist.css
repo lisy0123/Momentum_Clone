@@ -1,6 +1,6 @@
 .div-todo {
     width: 400px;
-    margin: var(--fontsize-xs); 
+    margin: var(--space-m); 
 }
 
 .todo-title {
@@ -18,7 +18,7 @@
 }
 
 .div-todo input {
-    width: 385px;
+    width: 375px;
     font-size: var(--fontsize-m);
     font-weight: 400;
     border: none;
@@ -47,13 +47,15 @@
     margin-top: var(--space-s);
     margin-bottom: var(--space-s);
     margin-left: var(--space-l);
-    margin-right: var(--space-l);
+    margin-right: var(--space-s);
     font-size: var(--space-m);
     font-weight: 300;
     color: var(--dark-background-color);
 }
 
 #edit {
+    padding-left: var(--space-s);
+    padding-right: var(--space-s);
     color: gray;
     font-size: var(--space-s);
 }
@@ -61,7 +63,7 @@
 #edit:hover {
     color: var(--main2-color);
     cursor: pointer;
-    transform: scale(1.4);
+    transform: scale(1.3);
 }
 
 #edit:active {

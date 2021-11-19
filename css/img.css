@@ -1,5 +1,5 @@
 .images-title {
-    color: var(--dark-background-color);
+    color: var(--dark-main-color);
     font-size: var(--fontsize-l);
     font-weight: 600;
     margin-left: var(--space-xs);
@@ -8,7 +8,6 @@
 
 #images {
     position: relative;
-    margin: var(--space-xs);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,29 +22,45 @@
 #images:hover {
     cursor: pointer;
     transform: scale(1.01);
+    filter: brightness(120%);
 }
 
 #images:active {
     transform: scale(0.99);
 }
 
-#quote {
-    width: 320px;
-    font-weight: 400;
-    margin: var(--space-xs);
-    color: white;
-    justify-content: center;
-    align-items: center;
+.img-cover{
+    border-radius: 20px;
     position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index:1;
+  }
+
+#quote {
+    width: 370px;
+    height: 80%;
+    color: white;
+    position: absolute;
+    z-index: 2;
 }
 
 .quote {
-    font-size: var(--fontsize-xs);
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: var(--fontsize-s);
     font-style: italic;
-    margin-bottom: var(--space-xs);
+    font-weight: 600;
+    margin-top: var(--space-s);
 }
 
 .author {
     float: right;
-    font-size: var(--fontsize-xs);
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: var(--space-xs);
 }

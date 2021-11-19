@@ -1,19 +1,30 @@
 .main {
     display: flex;
     flex-direction: column;
-    margin: var(--space-s);
+    margin: var(--space-m);
 }
 
-.div-clock-date {
+.div-sub {
+    height: 30px;
     display: flex;
+    align-items: center;
+    margin-left: var(--space-xs);
+    color: var(--dark-background-color);
+}
+
+#clock {
+    font-size: var(--fontsize-h2);
+    font-weight: 600;
+    margin-right: var(--space-xs);
+    color: var(--main1-color);
+}
+
+.div-date {
+    display: flex;
+    align-items: center;
     color:var(--dark-background-color);
     margin-left: var(--space-xs);
 }
-
-.date {
-    margin-right: var(--space-xs);
-}
-
 
 .div-hello {
     text-transform: uppercase;
