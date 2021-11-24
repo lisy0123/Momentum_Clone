@@ -6,7 +6,7 @@ function onGeoOk(position) {
     fetch(url).then(response => response.json())
     .then(data => {
         const weather = document.querySelector(".weather");
-        weather.innerText = `${data.main.temp}°C ${data.weather[0].main} `;
+        weather.innerText = `/ ${data.main.temp}°C ${data.weather[0].main} `;
     });
 }
 

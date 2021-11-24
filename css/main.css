@@ -5,17 +5,25 @@
 }
 
 .div-sub {
+    align-items: center;
+    margin-left: var(--space-xs);
+}
+
+.div-clock {
     height: 30px;
     display: flex;
     align-items: center;
-    margin-left: var(--space-xs);
+    margin-bottom: var(--space-xxs);
+}
+
+.date {
+    margin-right: var(--space-xxs);
     color: var(--dark-background-color);
 }
 
 #clock {
     font-size: var(--fontsize-h2);
     font-weight: 600;
-    margin-right: var(--space-xs);
     color: var(--main1-color);
 }
 
@@ -23,7 +31,7 @@
     display: flex;
     align-items: center;
     color:var(--dark-background-color);
-    margin-left: var(--space-xs);
+    font-weight: 400;
 }
 
 .div-hello {
