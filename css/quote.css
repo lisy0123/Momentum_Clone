@@ -1,3 +1,8 @@
+.div-images {
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-m);
+}
+
 .images-title {
     color: var(--dark-main-color);
     font-size: var(--fontsize-l);
@@ -14,27 +19,28 @@
 }
 
 .imgs {
-    width: 400px;
-    height: 120px;
-    border-radius: 20px;
+    width: 390px;
+    height: 110px;
+    border-radius: 10px;
 }
 
 #images:hover {
     cursor: pointer;
-    transform: scale(1.01);
-    filter: brightness(120%);
+    transform: scale(1);
+    filter: brightness(110%);
 }
 
 #images:active {
-    transform: scale(0.99);
+    transform: scale(.98);
+    filter: brightness(95%);
 }
 
 .img-cover{
-    border-radius: 20px;
+    border-radius: 10px;
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
     z-index:1;
   }
 
@@ -55,7 +61,7 @@
     font-size: var(--fontsize-s);
     font-style: italic;
     font-weight: 600;
-    margin-top: var(--space-s);
+    margin-top: var(--space-xs);
 }
 
 .author {

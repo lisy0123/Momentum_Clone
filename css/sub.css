@@ -1,0 +1,65 @@
+.div-sub {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--lightgray-color);
+    border-radius: 20px;
+}
+
+.sub-title {
+    font-size: var(--fontsize-l);
+    font-weight: 600;
+    margin-left: var(--space-xs);
+    margin-bottom: var(--space-xxs);
+    color: var(--dark-main-color);
+}
+
+.div-else {
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: var(--space-xs);
+}
+
+#clock {
+    font-size: var(--fontsize-h3);
+    color: var(--main1-color);
+    font-weight: 600;
+}
+
+.div-today {
+    height: 110px;
+    color: var(--dark-background-color);
+    font-weight: 400;
+    margin-top: var(--space-xs);
+}
+
+.div-weahter-icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.weather-icon {
+    filter: brightness(125%);
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.div-tmp {
+    text-align: left;
+    margin-left: var(--space-xs);
+}
+
+.weather {
+    color: var(--main1-color);
+    font-size: var(--fontsize-m);
+    font-weight: 600;
+}
+
+.location {
+    color: var(--gray-color);
+    font-size: var(--fontsize-xs);
+    font-weight: 400;
+    font-style: italic;
+}

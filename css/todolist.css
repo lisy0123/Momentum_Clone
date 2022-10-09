@@ -1,6 +1,5 @@
 .div-todo {
-    width: 400px;
-    margin: var(--space-m); 
+    width: 390px;
 }
 
 .todo-title {
@@ -8,7 +7,7 @@
     font-weight: 600;
     margin-left: var(--space-xs);
     margin-bottom: var(--space-xxs);
-    color: var(--drak-main-color);
+    color: var(--dark-main-color);
 }
 
 #todo-form {
@@ -18,7 +17,7 @@
 }
 
 .div-todo input {
-    width: 375px;
+    width: 365px;
     font-size: var(--fontsize-m);
     font-weight: 400;
     border: none;
@@ -53,19 +52,35 @@
     color: var(--dark-background-color);
 }
 
+.item {
+    color: var(--dark-background-color);
+    font-weight: 400;
+}
+
+.item:hover {
+    color: var(--main2-color);
+    cursor: pointer;
+}
+
+.item:active {
+    color: var(--dark-background-color);
+    transform: scale(.98);
+}
+
 #edit {
     padding-left: var(--space-s);
     padding-right: var(--space-s);
-    color: gray;
-    font-size: var(--space-s);
+    color: var(--gray-color);
+    font-size: var(--space-m);
 }
 
 #edit:hover {
     color: var(--main2-color);
+    filter: brightness(150%);
     cursor: pointer;
-    transform: scale(1.3);
 }
 
 #edit:active {
-    transform: scale(0.9);
+    filter: brightness(70%);
+    transform: scale(.8);
 }

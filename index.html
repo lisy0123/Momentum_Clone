@@ -6,25 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sub.css">
     <link rel="stylesheet" href="css/search.css">
-    <link rel="stylesheet" href="css/img.css">
+    <link rel="stylesheet" href="css/quote.css">
     <link rel="stylesheet" href="css/todolist.css">
-    <title>Momentum Clone</title>
+    <link rel="stylesheet" href="css/analog.css">
+    <link rel="stylesheet" href="css/dycalendar.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/bookmark.css">
+    <title>Momentum</title>
 </head>
 <body>
-    <div class="div-music">
-    </div>
     <div class="container">
-        <div class="main">
-            <div class="div-sub">
-                <div class="div-clock">
-                    <p id="clock">00:00:00</p>
-                </div>
-                <div class="div-date">
-                    <p class="date"></p>
-                    <p class="weather"></p>
-                </div>
-            </div>
+        <div class="left-main">
             <div class="div-hello">
                 <h1 id="hello-greeting">Good Morning!</h1>
                 <form class="hidden" id="login-form">
@@ -40,25 +34,56 @@
             <div class="div-search">
                 <form id="search-form">
                     <i class="fas fa-search"></i>
-                    <input required type="text" placeholder="Search"/>
+                    <input required type="text" placeholder="Google Search"/>
                 </form>
-                <div class="search-engine">
-                    <span class="search-engine-img">G</span>
-                    <input type="checkbox" id="search-engine-check">
-                    <i class="fas fa-chevron-down focusting"></i>
-                    <div class="search-engine-box">
-                        <p class="box-nipple"></p>
-                        <ul class="search-engine-list">
-                            <li>Google</li>
-                            <li>Naver</li>
-                        </ul>
+            </div>
+            <p class="bookmark-title">BOOKMARK.</p>
+            <div class="div-bookmark">
+                <p class="links">Google</p>
+                <p class="links">Naver</p>
+                <p class="links">Github</p>
+                <p class="links">Youtube</p>
+            </div>
+            <p class="sub-title">TODAY.</p>
+            <div class="div-sub">
+                <div class="div-else">
+                    <div class="div-today">
+                        <div class="div-weahter-icon">
+                            <img class="weather-icon"></img>
+                        </div>
+                        <div class="div-tmp">
+                            <p class="weather"></p>
+                            <p class="location"></p>
+                        </div>
+                    </div> 
+                    <div class="div-clock">
+                        <div class="div-analog">
+                            <div class="hour">
+                                <div id="hr" class="hr"></div>
+                            </div>
+                            <div class="min">
+                                <div id="mn" class="mn"></div>
+                            </div>
+                            <div class="sec">
+                                <div id="sc" class="sc"></div>
+                            </div>
+                        </div>
+                        <p id="clock">00:00:00</p>
                     </div>
                 </div>
-            </div>
-            <div class="div-bookmark">
-                <div class="bookmark">
-
+                <div class="calendar">
+                    <div id="dycalendar"></div>
                 </div>
+            </div>
+        </div>
+        <div class="right-main">
+            <div class="div-todo">
+                <p class="todo-title">TO DO.</p>
+                <div id="todo-list">
+                </div>
+                <form id="todo-form">
+                    <input required type="text" placeholder="Enter new task">
+                </form>
             </div>
             <div class="div-images">
                 <p class="images-title">TODAY QUOTE.</p>
@@ -71,20 +96,22 @@
                 </div>
             </div>
         </div>
-        <div class="div-todo">
-            <p class="todo-title">TO DO.</p>
-            <div id="todo-list">
-            </div>
-            <form id="todo-form">
-                <input required type="text" placeholder="Enter new task">
-            </form>
-        </div>
         <script src="https://kit.fontawesome.com/6e488df9c7.js" crossorigin="anonymous"></script>
-        <script src="js/clock_date.js"></script>
+        <script src="js/clock.js"></script>
         <script src="js/weather.js"></script>
         <script src="js/greeting.js"></script>
+        <script src="js/bookbark_serach.js"></script>
         <script src="js/quote.js"></script>
         <script src="js/todo.js"></script>
+        <script src="js/dycalendar.js"></script>
+        <script>
+            dycalendar.draw({
+                target: "#dycalendar",
+                type: "month",
+                highlighttoday: true,
+                prevnextbutton: "show"
+            })
+        </script>
     </div>
 </body>
 </html>

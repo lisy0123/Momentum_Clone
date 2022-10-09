@@ -3,11 +3,6 @@ const cover = document.querySelector(".img-cover");
 const quote = document.querySelector("#quote p:first-child");
 const author = document.querySelector("#quote p:last-child");
 
-const images = [
-    "01.png", "02.png", "03.png",
-    "04.png", "05.png",
-]
-
 const quotes = [
     {
         quote: "The way to get started\nis to quit talking and begin doing.",
@@ -60,32 +55,31 @@ const quotes = [
 ];
 
 function handleImages() {
-    const choseImage = images[Math.floor(Math.random() * images.length)];
+    const choseImage = Math.floor(Math.random() * 10);
     const bgImage = document.createElement("img");
-    const quote = document.querySelector("#quote");
+    const quoteAll = document.querySelector("#quote");
 
-    bgImage.src = `img/${choseImage}`;
+    bgImage.src = `img/image${choseImage + 1}.jpeg`;
     bgImage.classList.add("imgs");
     img.appendChild(bgImage);
-    cover.addEventListener("click", rehandleImages);
-    quote.addEventListener("click", handleQuoteImages);
+    quoteAll.addEventListener("click", handleQuoteImages);
 }
 
-function rehandleImages(event) {
-    const imgs = event.target.parentElement.querySelector(".imgs");
-    imgs.remove();
-    handleImages();
+function handleQuote() {
+    const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
+
+    quote.innerText = `${todaysQuote.quote}`;
+    author.innerText = `― ${todaysQuote.author}`;
 }
 
 function handleQuoteImages(event) {
     const imgs = event.target.parentElement.parentElement.querySelector(".imgs");
+    
     imgs.remove();
+    handleQuote();
     handleImages();
 }
 
-const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-quote.innerText = `${todaysQuote.quote}`;
-author.innerText = `― ${todaysQuote.author}`;
-
+handleQuote();
 handleImages()
