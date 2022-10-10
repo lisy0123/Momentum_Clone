@@ -12,8 +12,8 @@ Momentum Clone made with JS
 │   ├── day08_09
 │   ├── day10
 │   └── day11
-├── css					: Final Challenge 
-├── js						(todo_list, clock, weahter, calendar, search, quote)
+├── css			: Final Challenge 
+├── js			  (todo_list, clock, weahter, calendar, search, quote)
 ├── img
 └── index.html
 ```
@@ -24,9 +24,7 @@ Momentum Clone made with JS
 
 <img src="https://github.com/lisy0123/Momentum_Clone/blob/main/page1.png" alt="img" style="zoom:65%;" />
 
-<img src="https://github.com/lisy0123/Momentum_Clone/blob/main/page2.png" width="48%" height="60%">
-
-<img src="https://github.com/lisy0123/Momentum_Clone/blob/main/page3.png" width="48%" height="60%">
+<img src="https://github.com/lisy0123/Momentum_Clone/blob/main/page3.png" width="48%" height="60%"> <img src="https://github.com/lisy0123/Momentum_Clone/blob/main/page2.png" width="48%" height="60%">
 
 
 
