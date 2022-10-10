@@ -1,18 +1,14 @@
 .left-main {
     display: flex;
     flex-direction: column;
-    margin-right: var(--space-l);
-    margin-right: var(--space-l);
-    margin-top: var(--space-m);
+    margin: var(--space-l);
     width: 390px;
 }
 
 .right-main {
     display: flex;
     flex-direction: column;
-    margin-right: var(--space-l);
-    margin-right: var(--space-l);
-    margin-top: var(--space-m);
+    margin: var(--space-l);
     width: 390px;
 }
 

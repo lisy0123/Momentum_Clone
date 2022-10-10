@@ -18,81 +18,83 @@
 </head>
 <body>
     <div class="container">
-        <div class="left-main">
-            <div class="div-hello">
-                <h1 id="hello-greeting">Good Morning!</h1>
-                <form class="hidden" id="login-form">
-                    <input required type="text" placeholder="What is your name?"/>
-                </form>
-                <div id="div-greeting">
-                    <h2 id="greeting" class="hidden"></h2>
-                    <div id="modify" class="hidden">
-                        <i class="fa fa-pen"></i>
+        <div class="main">
+            <div class="left-main">
+                <div class="div-hello">
+                    <h1 id="hello-greeting">Good Morning!</h1>
+                    <form class="hidden" id="login-form">
+                        <input required type="text" placeholder="What is your name?"/>
+                    </form>
+                    <div id="div-greeting">
+                        <h2 id="greeting" class="hidden"></h2>
+                        <div id="modify" class="hidden">
+                            <i class="fa fa-pen"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="div-search">
+                    <form id="search-form">
+                        <i class="fas fa-search"></i>
+                        <input required type="text" placeholder="Google Search"/>
+                    </form>
+                </div>
+                <p class="bookmark-title">BOOKMARK.</p>
+                <div class="div-bookmark">
+                    <p class="links">Google</p>
+                    <p class="links">Naver</p>
+                    <p class="links">Github</p>
+                    <p class="links">Youtube</p>
+                </div>
+                <p class="sub-title">TODAY.</p>
+                <div class="div-sub">
+                    <div class="div-else">
+                        <div class="div-today">
+                            <div class="div-weahter-icon">
+                                <img class="weather-icon"></img>
+                            </div>
+                            <div class="div-tmp">
+                                <p class="weather"></p>
+                                <p class="location"></p>
+                            </div>
+                        </div> 
+                        <div class="div-clock">
+                            <div class="div-analog">
+                                <div class="hour">
+                                    <div id="hr" class="hr"></div>
+                                </div>
+                                <div class="min">
+                                    <div id="mn" class="mn"></div>
+                                </div>
+                                <div class="sec">
+                                    <div id="sc" class="sc"></div>
+                                </div>
+                            </div>
+                            <p id="clock">00:00:00</p>
+                        </div>
+                    </div>
+                    <div class="calendar">
+                        <div id="dycalendar"></div>
                     </div>
                 </div>
             </div>
-            <div class="div-search">
-                <form id="search-form">
-                    <i class="fas fa-search"></i>
-                    <input required type="text" placeholder="Google Search"/>
-                </form>
-            </div>
-            <p class="bookmark-title">BOOKMARK.</p>
-            <div class="div-bookmark">
-                <p class="links">Google</p>
-                <p class="links">Naver</p>
-                <p class="links">Github</p>
-                <p class="links">Youtube</p>
-            </div>
-            <p class="sub-title">TODAY.</p>
-            <div class="div-sub">
-                <div class="div-else">
-                    <div class="div-today">
-                        <div class="div-weahter-icon">
-                            <img class="weather-icon"></img>
-                        </div>
-                        <div class="div-tmp">
-                            <p class="weather"></p>
-                            <p class="location"></p>
-                        </div>
-                    </div> 
-                    <div class="div-clock">
-                        <div class="div-analog">
-                            <div class="hour">
-                                <div id="hr" class="hr"></div>
-                            </div>
-                            <div class="min">
-                                <div id="mn" class="mn"></div>
-                            </div>
-                            <div class="sec">
-                                <div id="sc" class="sc"></div>
-                            </div>
-                        </div>
-                        <p id="clock">00:00:00</p>
+            <div class="right-main">
+                <div class="div-todo">
+                    <p class="todo-title">TO DO.</p>
+                    <div id="todo-list">
                     </div>
+                    <form id="todo-form">
+                        <input required type="text" placeholder="Enter new task">
+                    </form>
                 </div>
-                <div class="calendar">
-                    <div id="dycalendar"></div>
-                </div>
-            </div>
-        </div>
-        <div class="right-main">
-            <div class="div-todo">
-                <p class="todo-title">TO DO.</p>
-                <div id="todo-list">
-                </div>
-                <form id="todo-form">
-                    <input required type="text" placeholder="Enter new task">
-                </form>
-            </div>
-            <div class="div-images">
-                <p class="images-title">TODAY QUOTE.</p>
-                <div id=images>
-                    <div id="quote">
-                        <p class="quote"></p>
-                        <p class="author"></p>
+                <div class="div-images">
+                    <p class="images-title">TODAY QUOTE.</p>
+                    <div id=images>
+                        <div id="quote">
+                            <p class="quote"></p>
+                            <p class="author"></p>
+                        </div>
+                        <div class="img-cover"></div>
                     </div>
-                    <div class="img-cover"></div>
                 </div>
             </div>
         </div>
