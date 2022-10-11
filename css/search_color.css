@@ -3,7 +3,7 @@
     width: 390px;
     border: solid 3px var(--main1-color);
     border-radius: 30px;
-    margin-top: var(--space-m);
+    margin-top: var(--space-s);
     margin-bottom: var(--space-m);
     margin-left: var(--space-xxs);
     margin-right: var(--space-xxs);
@@ -14,7 +14,6 @@
 }
 
 #search-form {
-    margin: var(--space-s);
     height: 24px;
 }
 
@@ -32,4 +31,29 @@
     color: var(--gray-color);
     font-size: var(--fontsize-m);
     font-weight: 400;
+}
+
+.div-color {
+    display: flex;
+    margin-top: var(--space-s);
+    margin-left: var(--space-s);
+    align-items: center;
+}
+
+.colorpicker {
+    height: 20px;
+    width: 20px;
+    margin-right: var(--space-s);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.colorpicker:hover {
+    transform: scale(1.2);
+    filter: brightness(110%);
+}
+
+.colorpicker:active {
+    transform: scale(.95);
+    filter: brightness(90%);
 }

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/sub.css">
-    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/search_color.css">
     <link rel="stylesheet" href="css/quote.css">
     <link rel="stylesheet" href="css/todolist.css">
     <link rel="stylesheet" href="css/analog.css">
@@ -20,6 +20,13 @@
     <div class="container">
         <div class="main">
             <div class="left-main">
+                <div class="div-color">
+                    <p class="colorpicker" onclick="handleChangeColor(randomColors[0])"></p>
+                    <p class="colorpicker" onclick="handleChangeColor(randomColors[1])"></p>
+                    <p class="colorpicker" onclick="handleChangeColor(randomColors[2])"></p>
+                    <p class="colorpicker" onclick="handleChangeColor(randomColors[3])"></p>
+                    <p class="colorpicker" onclick="handleChangeColor(randomColors[4])"></p>
+                </div>
                 <div class="div-hello">
                     <h1 id="hello-greeting">Good Morning!</h1>
                     <form class="hidden" id="login-form">
@@ -106,6 +113,7 @@
         <script src="js/quote.js"></script>
         <script src="js/todo.js"></script>
         <script src="js/dycalendar.js"></script>
+        <script src="js/backgroundcolor.js"></script>
         <script>
             dycalendar.draw({
                 target: "#dycalendar",

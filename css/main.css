@@ -1,14 +1,20 @@
 .left-main {
     display: flex;
     flex-direction: column;
-    margin: var(--space-l);
+    margin-top: var(--space-s);
+    margin-bottom: var(--space-l);
+    margin-left: var(--space-l);
+    margin-right: var(--space-l);
     width: 390px;
 }
 
 .right-main {
     display: flex;
     flex-direction: column;
-    margin: var(--space-l);
+    margin-top: var(--space-l);
+    margin-bottom: var(--space-m);
+    margin-left: var(--space-l);
+    margin-right: var(--space-l);
     width: 390px;
 }
 
