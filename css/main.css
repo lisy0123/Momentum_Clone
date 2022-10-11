@@ -1,10 +1,14 @@
 .left-main {
     display: flex;
     flex-direction: column;
-    margin-top: var(--space-s);
+    margin-top: var(--space-xs);
     margin-bottom: var(--space-l);
-    margin-left: var(--space-l);
+    margin-left: var(--space-m);
     margin-right: var(--space-l);
+}
+
+.div-left-sub {
+    margin-left: var(--space-m);
     width: 390px;
 }
 

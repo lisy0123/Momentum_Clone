@@ -1,9 +1,9 @@
 .div-search {
     height:46px;
-    width: 390px;
+    width: 385px;
     border: solid 3px var(--main1-color);
     border-radius: 30px;
-    margin-top: var(--space-s);
+    margin-top: var(--space-m);
     margin-bottom: var(--space-m);
     margin-left: var(--space-xxs);
     margin-right: var(--space-xxs);
@@ -18,7 +18,7 @@
 }
 
 #search-form input {
-    width: 335px;
+    width: 330px;
     border: none;
     outline: none;
     padding-left: var(--space-xxs);
@@ -35,15 +35,15 @@
 
 .div-color {
     display: flex;
-    margin-top: var(--space-s);
-    margin-left: var(--space-s);
+    margin-top: var(--space-xxs);
+    margin-bottom: var(--space-m);
     align-items: center;
 }
 
 .colorpicker {
-    height: 20px;
-    width: 20px;
-    margin-right: var(--space-s);
+    height: 16px;
+    width: 16px;
+    margin-right: var(--space-xs);
     border-radius: 50%;
     cursor: pointer;
 }
