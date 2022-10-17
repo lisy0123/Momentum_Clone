@@ -22,11 +22,13 @@ Momentum Clone made with JS
 
 - **[Final Challenge](https://lisy0123.github.io/Momentum_Clone/)**
 
-<img src="https://github.com/lisy0123/Momentum_Clone/blob/main/page1.png" alt="img" style="zoom:65%;" />
+<img src="https://github.com/lisy0123/Momentum_Clone/blob/main/page1.png" alt="img" style="zoom:70%;" />
 
 <img src="https://github.com/lisy0123/Momentum_Clone/blob/main/page3.png" width="48%" height="60%"> <img src="https://github.com/lisy0123/Momentum_Clone/blob/main/page2.png" width="48%" height="60%">
 
+### :pushpin: ​Outstanding graduates
 
+<img src="https://github.com/lisy0123/Momentum_Clone/blob/main/done.png" alt="done" style="zoom:90%;" />
 
 [↩️ Go Back](https://github.com/lisy0123/Nomadcoders)
 
